@@ -71,6 +71,10 @@ body {
   transition: .3s;
 }
 
+#about .btn-warning {
+  color: black;
+}
+
 #about::-webkit-scrollbar {
   width: .4em;
 }
