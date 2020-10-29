@@ -47,3 +47,40 @@ body {
 #nav-dropdown.dropdown-menu {
   min-width: 6rem;
 }
+
+.navbar-brand {
+  color: #E2C89E !important;
+}
+
+#about {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  height: calc(100vh - 56px);
+}
+#about .container {
+  max-width: 700px;
+  margin-top: 8rem;
+}
+#about p, #about ul {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #B4B4B4;
+}
+#about a {
+  color: #E2C89E;
+  transition: .3s;
+}
+
+#about::-webkit-scrollbar {
+  width: .4em;
+}
+
+#about::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+}
+
+#about *::selection {
+  background-color: #00FFFF;
+  color: white;
+}
