@@ -197,7 +197,7 @@ let dataset = [
     codepen: 'https://codepen.io/chendf/pen/yLNWOGJ'
   },
   {
-    path: '29',
+    path: '29-cover',
     name: 'Steering Behavior',
     codepen: 'https://codepen.io/chendf/pen/zYGQgPX'
   },
