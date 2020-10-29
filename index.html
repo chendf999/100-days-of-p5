@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./src/styles.css">
+  <title>100 days of p5</title>
+</head>
+<body>
+  <!-- Header -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand mr-4" href="#">100 days of p5</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="./about.html">About <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="" target="_blank">Github <span class="sr-only">(current)</span></a>
+        </li>
+      </ul>
+
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item" id="title"></li>
+      </ul>
+    </div>
+
+  </nav>
+  <!-- End Header -->
+
+  <div id="canvas"><iframe src=""></iframe></div>
+
+<div class="control">
+  <a id="codepen" href="" target="_blank" type="button" class="btn btn-sm btn-secondary">View Code</a>
+
+  <div>
+    <button id="reload" type="button" class="ml-2 btn btn-sm btn-secondary">Reload Sketch</button>
+
+    <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+      <div class="btn-group" role="group">
+        <button type="button" id="btn-prev" class="next btn btn-secondary btn-sm">Prev</button>
+        <button id="btnGroupDrop1" type="button" class="btn btn-secondary btn-sm btn-outline dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <!-- sketch index -->
+        </button>
+        <div id="nav-dropdown" class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+          <!-- dropdown renders here -->
+        </div>
+      </div>
+      <button type="button" id="btn-next" class="btn btn-secondary btn-sm">Next</button>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+<!-- JavaScript -->
+<script type="text/javascript" src="./src/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+<script type="text/javascript">
+for (var i = 0; i < 50; i++) {
+  $('#nav-dropdown').append(`
+    <a class="dropdown-item" href="#" index="${i}">#${i+1}</a>
+  `);
+}
+</script>
+<script type="text/javascript" src="./src/loader.js"></script>
+</body>
+</html>

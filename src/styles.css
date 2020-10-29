@@ -1,0 +1,49 @@
+@font-face{
+  font-family: 'Saira';
+  src: url('./Saira-Regular.ttf');
+}
+
+@font-face{
+  font-family: 'Saira';
+  src: url('./Saira-Bold.ttf');
+  font-weight: bold;
+}
+
+body * {
+  font-family: 'Saira';
+}
+
+body {
+  padding: 0; margin: 0;
+  background: #1D1E22;
+  color: white;
+  overflow: hidden;
+}
+
+#canvas iframe {
+  width: 100vw;
+  height: calc(100vh - 56px); /* NOTE: header heights */
+  border: none;
+}
+
+.control {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+#btnGroupDrop1 {
+  min-width: 85px;
+}
+
+#nav-dropdown {
+  max-height: 300px;
+  overflow-y: scroll;
+}
+#nav-dropdown.dropdown-menu {
+  min-width: 6rem;
+}
